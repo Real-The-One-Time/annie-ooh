@@ -136,7 +136,7 @@ basic.forever(function () {
         music.rest(music.beat(BeatFraction.Quarter))
         music.playTone(523, music.beat(BeatFraction.Quarter))
         music.playTone(587, music.beat(BeatFraction.Half))
-        music.rest(music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Quarter))
         bass1()
     }
 })
