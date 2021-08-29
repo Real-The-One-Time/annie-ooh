@@ -76,6 +76,9 @@ function annie_annie_ooh_ooh_ooh_ooh () {
         music.rest(music.beat(BeatFraction.Quarter))
     }
 }
+function annie_annie_ooh_ooh_ooh_ooh_visual () {
+	
+}
 function dance () {
     led.unplot(3, 0)
     led.unplot(3, 1)
