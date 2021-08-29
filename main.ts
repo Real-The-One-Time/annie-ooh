@@ -1,3 +1,33 @@
+function everybody_annie_ooh () {
+    music.playTone(831, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(784, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(698, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(698, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(622, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(622, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(698, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(831, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(784, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(698, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(622, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(622, music.beat(BeatFraction.Quarter))
+    music.playTone(698, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(523, music.beat(BeatFraction.Quarter))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+}
 function bass1 () {
     music.playTone(233, music.beat(BeatFraction.Quarter))
     music.rest(music.beat(BeatFraction.Whole))
@@ -23,6 +53,28 @@ function bass1 () {
     music.rest(music.beat(BeatFraction.Quarter))
     music.playTone(220, music.beat(BeatFraction.Quarter))
     music.rest(music.beat(BeatFraction.Quarter))
+}
+function annie_annie_ooh_ooh_ooh_ooh () {
+    for (let index = 0; index < 2; index++) {
+        music.playTone(659, music.beat(BeatFraction.Half))
+        music.playTone(698, music.beat(BeatFraction.Half))
+        music.playTone(659, music.beat(BeatFraction.Half))
+        music.playTone(698, music.beat(BeatFraction.Half))
+        music.playTone(466, music.beat(BeatFraction.Whole))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.playTone(175, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.playTone(208, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.playTone(220, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
 }
 function dance () {
     led.unplot(3, 0)
@@ -138,6 +190,8 @@ basic.forever(function () {
         music.playTone(587, music.beat(BeatFraction.Half))
         music.rest(music.beat(BeatFraction.Quarter))
         bass1()
+        annie_annie_ooh_ooh_ooh_ooh()
+        everybody_annie_ooh()
     }
 })
 basic.forever(function () {
